@@ -1,0 +1,57 @@
+import pygame
+import turtle
+import os
+
+pygame.init()  # Инициализируем модуль pygame
+
+width = 1366  # ширина игрового окна
+height = 768  # высота игрового окна
+fps = 100  # частота кадров в секунду
+game_name = "SHUTDOWN"  # название нашей игры
+
+screen = pygame.display.set_mode((width, height))
+pygame.display.set_caption(game_name)
+
+icon = pygame.image.load('virus.png')
+pygame.display.set_icon(icon)
+
+clock = pygame.time.Clock()
+run = True
+while run :
+   #контроль времени
+   clock.tick(fps)
+   for event in pygame.event.get():
+      if event.type == pygame.QUIT:
+         run = False
+
+t = turtle.Pen
+t.forward(100)
+t.left(90)
+t.forward(100)
+t.left(90)
+t.forward(100)
+t.left(90)
+t.forward(100)
+t.left(90)
+t.forward(200)
+t.left(90)
+t.forward(100)
+t.left(90)
+t.forward(100)
+t.forward(200)
+t.left(90)
+t.forward(100)
+t.left(90)
+t.forward(100)
+t.left(90)
+t.forward(200)
+t.right(90)
+t.forward(100)
+t.right(90)
+t.forward(100)
+t.left(180)
+t.forward(200)
+t.left(90)
+t.forward(100)
+t.left(90)
+t.forward(100)
